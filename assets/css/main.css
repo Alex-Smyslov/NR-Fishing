@@ -1,5 +1,5 @@
 body {
-    background-color: var(--light-green);
+    background-color: var(--light-grey);
 }
 
 main {
@@ -118,96 +118,6 @@ main {
     color: var(--blue-color);
     transform: scale(1.05);
     cursor: default;
-}
-
-
-/* schemework */
-
-.schemework {
-    margin-bottom: var(--m108);
-}
-
-.schemework__wrapper {
-    background-image: url(../images/back-pic.png);
-    height: 504px;
-    position: relative;
-    overflow: hidden;
-}
-
-.schemework__figure {
-    width: 240px;
-    height: 240px;
-    background-color: var(--blue-color);
-    border-radius: 50%;
-    position: absolute;
-    left: 52px;
-    top: 29px;
-}
-
-.ellypse {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    animation: animate_pulse 1.5s infinite;
-
-}
-
-@keyframes animate_pulse {
-	0% {
-		box-shadow: 0 0 0 0 rgba(4, 73, 113, 0.4);
-	}
-	70% {
-		box-shadow: 0 0 0 35px rgba(228, 25, 49, 0);
-	}
-	100% {
-		box-shadow: 0 0 0 0 rgba(228, 25, 49, 0);
-	}
-    
-}
-
-.ellypse__text {
-    margin: 0;
-    font-size: var(--font-size-22);
-    font-weight: var(--font-weight-300);
-    color: var(--white-color);
-}
-
-
-.schemework__text-block {
-    background-color: var(--blue-color);
-    position: absolute;
-    width: 0;
-    right: 0;
-    top: 29px;
-    transition: width 0.6s ease;
-}
-
-.schemework__list {
-    font-size: var(--font-size-16);
-    font-weight: var(--font-weight-300);
-    color: var(--white-color);
-    list-style-type: decimal;
-    height: 185px;
-    margin: 0;
-    padding-top: var(--m24);
-    padding-bottom: var(--m24);
-    opacity: 0;
-}
-
-.schemework__wrapper:hover .schemework__text-block{
-    width: 650px;
-    transition: width 0.6s ease;
-}
-
-.schemework__wrapper:hover .schemework__list{
-    transition: opacity 3s ease;
-    opacity: 1;
-}
-
-.schemework__wrapper:hover .ellypse {
-    animation: none;
-    background-color: (0,0,0,0.1);
 }
 
 /* slider */
@@ -384,7 +294,7 @@ transition: all 1s ease;
     }
     
     .main-banner__slogan {
-        padding-top: 240px;
+        padding-top: 200px;
     }
 
     .main-banner__title {
