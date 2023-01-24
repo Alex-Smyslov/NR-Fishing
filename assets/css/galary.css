@@ -15,8 +15,8 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
- 
-/*.galary__main-image {
+/*  
+.galary__main-image {
 	width: 100%;
 }
 
@@ -26,7 +26,7 @@ main {
 
 .main-text a {
 	color: var(--orange-color);
-}*/
+} */
 
 .galary__examples-slider {
 	max-height: 90vh;

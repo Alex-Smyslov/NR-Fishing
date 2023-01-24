@@ -53,7 +53,7 @@ main {
 }
 
 .main-banner--text {
-    color: var(--medium-grey-color);
+    color: var(--white-color);
     font-family: var(--font-heading);
 }
 
@@ -75,10 +75,10 @@ main {
 
 .main-banner__slogan {
     float: right;
-    padding-top: 222px;
+    padding-top: 250px;
     font-size: 54px;
     font-weight: var(--font-weight-600);
-	 color: var(--light-green-color);
+	 color: var(--white-color);
     letter-spacing: 0.03em;
     line-height: 130%;
     margin: 0;
@@ -293,10 +293,6 @@ transition: all 1s ease;
     .brend__pic {
         width: 546px;
     }
-    
-    .main-banner__slogan {
-        padding-top: 200px;
-    }
 
     .main-banner__title {
         padding-top: 200px;
@@ -310,23 +306,8 @@ transition: all 1s ease;
 }
 
 @media screen and (max-width: 1023px){
-    .main-banner__slogan {
-        padding-top: 200px;
-    }
-
     .brend__pic {
         width: 340px;
-    }
-
-    .schemework__wrapper:hover .schemework__text-block{
-        width: 784px;
-        height: 504px;
-    }
-
-    .schemework__list {
-        font-size: var(--font-size-22);
-        font-weight: var(--font-weight-300);
-        padding-top: var(--m96);
     }
 
     .primary-btn {
@@ -343,7 +324,7 @@ transition: all 1s ease;
 
     .main-banner__slogan {
         font-size: var(--font-size-32);
-        padding-top: 200px;
+        padding-top: 350px;
     }
 
     .brend-grid__item {
@@ -352,11 +333,6 @@ transition: all 1s ease;
 
     .brend__pic {
         width: 100%;
-    }
-
-    .schemework__wrapper:hover .schemework__text-block{
-        width: 484px;
-        height: 504px;
     }
 
     img {
@@ -392,7 +368,6 @@ transition: all 1s ease;
 
     .main-banner__slogan {
         font-size: 28px;
-        padding-top: 250px;
     }
 
     .brend-grid {
@@ -406,12 +381,6 @@ transition: all 1s ease;
     .brend__pic {
         width: 100%;
     }
-
-    .schemework__wrapper:hover .schemework__text-block{
-        width: 350px;
-        height: 504px;
-    }
-
     .primary-btn {
         padding: 19px 36px;
         font-size: 18px;
