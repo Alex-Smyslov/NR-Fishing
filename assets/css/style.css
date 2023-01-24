@@ -279,7 +279,7 @@ textarea[placeholder] {
 }
 
 .scrolled .header__top-part {
-    background-color: var(--light-grey);
+    background-color: var(--light-grey-color);
     border-bottom: 1px solid var(--blue-color);
     box-shadow: 0px 0px 8px #232323;
     transition: 0.3s ease;
@@ -396,12 +396,12 @@ textarea[placeholder] {
 
 /*============================ footer =========================*/
 .footer {
-	background-color: #353535;
+	background-color: var(--medium-grey-color);
    margin-top: var(--m36);
 }
 
 .footer a {
-	color: var(--light-grey);
+	color: var(--light-grey-color);
 	text-decoration: none;
 }
 
@@ -427,9 +427,14 @@ textarea[placeholder] {
  }
  .footer__column-3 {
 	grid-area: C;
+    padding-top: 20px;
  }
  .footer__row-bot {
 	grid-area: D;
+ }
+
+.footer__column-2 ul{
+    padding-left: 0;
  }
 
  .footer__wrapper-text,
@@ -439,7 +444,7 @@ textarea[placeholder] {
 	font-weight: var(--font-weight-300);
 	font-size: var(--font-size-16);
 	line-height: var(--line-height-130);
-	color: var(--light-grey);
+	color: var(--light-grey-color);
 }
 
 .footer__wrapper a:hover {
@@ -587,7 +592,7 @@ textarea[placeholder] {
 		width: 100%;
 		height: 100%;
 		padding: 50px 15px;
-		background: var(--light-grey);
+		background: var(--light-grey-color);
 		transform: translateX(-100%);
 		transition: transform 0.5s;
 }

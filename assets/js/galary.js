@@ -1,16 +1,5 @@
 
 'use strict';
-window.onscroll = function() {
-	var scrollCurrent = window.pageYOffset;
-	const header = document.querySelector('header')
-	if (scrollCurrent>=100) {
-		 header.classList.add('scrolled')
-	}
-	
-	else {
-		 header.classList.remove('scrolled')
-	}
-}
 
 const images = document.querySelectorAll('.slider .slider-line img');
 const sliderLine  = document.querySelector('.slider-line');
@@ -66,10 +55,6 @@ function rollSlider() {
 	sliderLine.style.transform = 'translate(-'+count*width+'px)';
 }
 
-
-
-
-
 for (const round of sliderRound) {
 	round.addEventListener('click', function () {
 		for(let i = 0; i < sliderRound.length; i++ ) {
@@ -80,7 +65,3 @@ for (const round of sliderRound) {
 		round.classList.add('input--active');
 	})
 }
-
-
-
-// --------------------------------------------
