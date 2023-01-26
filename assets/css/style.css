@@ -406,12 +406,11 @@ textarea[placeholder] {
 }
 
 .footer__wrapper {
-	grid-template-rows: 3fr 1fr;
+	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr 1fr; 
 	gap: 36px; 
 	grid-template-areas: 
-		"A B C"
-		"D D D"; 
+		"A B C"; 
 	align-items: flex-start;
 	justify-items: center;
 	text-align: center;
@@ -429,9 +428,6 @@ textarea[placeholder] {
 	grid-area: C;
     padding-top: 20px;
  }
- .footer__row-bot {
-	grid-area: D;
- }
 
 .footer__column-2 ul{
     padding-left: 0;
@@ -448,7 +444,7 @@ textarea[placeholder] {
 }
 
 .footer__wrapper a:hover {
-	color: var(--white-color);
+	color: var(--orange-color);
 }
 
 .footer__politics {
@@ -456,7 +452,8 @@ textarea[placeholder] {
 }
 
 .footer__feedback-email,
-.footer__feedback-adress {
+.footer__feedback-adress,
+.footer__cash {
 	margin-top: 40px;
 }
 
@@ -687,11 +684,10 @@ textarea[placeholder] {
         display: none;
     }
 	 .footer__wrapper {
-		grid-template-rows: 4fr 1fr;
+		grid-template-rows: 1fr;
 		grid-template-columns: 1fr 1fr; 
 		grid-template-areas: 
-			"A C"
-			"D D";
+			"A C";
 		gap: 0;
 	}
  .footer__feedback-number {
@@ -761,12 +757,11 @@ textarea[placeholder] {
         font-size: 14px;
     }
 	 .footer__wrapper {
-		grid-template-rows: 3fr 3fr 1fr;
+		grid-template-rows: 1fr;
 		grid-template-columns: 1fr; 
 		grid-template-areas: 
 			"A"
-			"C"
-			"D";
+			"C";
 		gap: 0;
 	}
 }
