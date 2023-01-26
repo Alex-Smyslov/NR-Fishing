@@ -134,40 +134,35 @@ main {
 }
 /* ============================Плитка================================== */
 
-.galary__container {
+/* .galary__container {
 	padding: 20px 0 100px 0;
-}
+} */
 
-.galary__flex {
-	align-items: stretch;
-	display: flex;
-	gap: 40px;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-.galary__item {
-	flex-basis: 22%;
-	padding: 10px;
-	color: var(--white-color);
-	background-color: var(--medium-grey-color);
-	border-radius: 10px;
-}
-
-.galary__item:hover {
-	position: relative;
-	transform: scale(1.1);
-	transition: 0.3s ease all;
-	background: var(--text-color);
-	z-index: 2;
-}
-.photo-item {
-	min-height: 300px;
-	padding-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+.galary-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	gap: var(--m36);
 	align-items: center;
-	justify-content: flex-start;
+	justify-items: center;
+	padding-bottom: 24px;
+	z-index: -1;
+}
+
+.galary__pic {
+	display: block;
+	width: 250px;
+}
+
+.galary__item {
+	position: relative;
+	transition: 0.3s ease;
+}
+
+.galary-grid__item:hover {
+	color: var(--blue-color);
+	transform: scale(1.05);
+	cursor: default;
 }
 
 /* Adaptive */
@@ -179,6 +174,15 @@ main {
 	h1, h2 {
 		margin-left: 20px;
 	}
+	.galary-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		gap: 48px;
+  }
+
+  .galary__pic {
+		width: 546px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -206,6 +210,17 @@ main {
 		background: rgba(42, 47, 55, 0,9);
 		z-index: 0;
 	}
+	.brend-grid__item {
+		width: 100%;
+  }
+
+  .brend__pic {
+		width: 100%;
+  }
+
+  img {
+		display: block;
+  }
 
 	.slider-prev {
 		display: none;
@@ -217,19 +232,9 @@ main {
 }
 
 @media screen and (max-width: 630px) {
-	.galary__reviews-item {
-		flex-basis: 55%;
-	}
 }
 
 @media screen and (max-width: 480px) {
-	.galary__reviews-container {
-		padding: 0;
-	}
-	
-	.galary__reviews-item {
-		flex-basis: 70%;
-	}
 
 	.galary__title {
 		font-size: 32px;
