@@ -33,7 +33,7 @@ body {
 }
 
 .phone:hover {
-    color: var(--orange-color);
+    color: var(--green-color);
 }
 
 .footer-bot-part__number .phone:hover {
@@ -83,7 +83,7 @@ input {
 input:focus,
 textarea:focus {
     border: none;
-    outline: 1px solid var(--orange-color);
+    outline: 1px solid var(--green-color);
 }
 
 input[placeholder],
@@ -138,12 +138,12 @@ textarea[placeholder] {
     font-weight: var(--font-weight-500);
 }
 
-.primary-btn--orange {
-    background: var(--orange-color);
+.primary-btn--green {
+    background: var(--green-color);
 }
 
-.primary-btn--orange:hover {
-    background-color: var(--blue-color);
+.primary-btn--green:hover {
+    background-color: var(--light-green-color);
     transition: 0.3s ease;
 }
 
@@ -169,7 +169,7 @@ textarea[placeholder] {
     font-size: var(--font-size-16);
     line-height: var(--line-height-130);
     color: var(--white-color);
-    background: rgba(4, 73, 113, 0.7);
+    background: var(--green-color);
     text-decoration: none;
     cursor: default;
     z-index: 100;
@@ -187,7 +187,7 @@ textarea[placeholder] {
 }
 
 .btn-up:hover {
-    background: var(--blue-color);
+    background: var(--light-green-color);
     transition: 0.3s ease;
 }
 
@@ -245,11 +245,11 @@ textarea[placeholder] {
 
 .main-menu__list a:hover {
     transition: 0.3s ease;
-    color: var(--orange-color);
+    color: var(--green-color);
 }
 
 .main-menu__item--active a {
-    color: var(--orange-color);
+    color: var(--green-color);
 }
 
 .main-menu__action {
@@ -345,7 +345,7 @@ textarea[placeholder] {
 
 .close:hover,
 .close:focus {
-    color: var(--orange-color);
+    color: var(--green-color);
     text-decoration: none;
     cursor: pointer;
 }
@@ -444,7 +444,7 @@ textarea[placeholder] {
 }
 
 .footer__wrapper a:hover {
-	color: var(--orange-color);
+	color: var(--green-color);
 }
 
 .footer__politics {
@@ -672,7 +672,7 @@ textarea[placeholder] {
     }
 
     .mobile__btn:hover {
-        color: var(--orange-color)
+        color: var(--green-color)
     }
 
     .mobile__phone {
