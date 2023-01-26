@@ -15,18 +15,6 @@ main {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-/*  
-.galary__main-image {
-	width: 100%;
-}
-
-.main-text {
-	color: var(--white-color);
-}
-
-.main-text a {
-	color: var(--orange-color);
-} */
 
 .galary__examples-slider {
 	max-height: 90vh;
@@ -107,6 +95,7 @@ main {
 .slider-prev:hover {
 	opacity: 1;
 	transform: scale(1.1);
+	background-color: var(--orange-color);
 }
 
 .slider-next {
@@ -131,12 +120,13 @@ main {
 .slider-next:hover {
 	opacity: 1;
 	transform: scale(1.1);
+	background-color: var(--orange-color);
 }
 /* ============================Плитка================================== */
 
-/* .galary__container {
+.galary__container {
 	padding: 20px 0 100px 0;
-} */
+}
 
 .galary-grid {
 	display: grid;
@@ -181,7 +171,7 @@ main {
   }
 
   .galary__pic {
-		width: 546px;
+		width: 300px;
   }
 }
 

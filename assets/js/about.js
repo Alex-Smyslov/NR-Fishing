@@ -1,4 +1,3 @@
-/* Slider */
 const slides = document.querySelectorAll('.slide'),
       dots = document.querySelectorAll('.dot');
 

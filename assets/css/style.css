@@ -408,7 +408,7 @@ textarea[placeholder] {
 .footer__wrapper {
 	grid-template-rows: 1fr;
 	grid-template-columns: 1fr 1fr 1fr; 
-	gap: 36px; 
+	gap: var(--m36); 
 	grid-template-areas: 
 		"A B C"; 
 	align-items: flex-start;
