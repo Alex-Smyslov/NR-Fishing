@@ -233,6 +233,7 @@ img {
 
 .brend {
    margin-bottom: var(--m108);
+	padding: var(--m60);
 	background-color: var(--medium-grey-color);
 }
 
@@ -270,13 +271,14 @@ img {
 /* Map */
 
 .map-title {
-	border: 1px #000 solid;
-	border-radius: 50px;
-	margin-bottom: 20px;
+	margin-bottom:var(--m108);
 }
 
-.map-title h2{
-	margin: 20px;
+.map-address {
+	padding-left: 20px;
+	border: 1px #000 solid;
+	border-radius: 50px;
+	margin-bottom: 40px;
 }
 
 .map__grid {
