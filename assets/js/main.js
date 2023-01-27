@@ -86,3 +86,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 });
 
+/* footer date */
+
+const date = new Date();
+document.querySelector('.out-date').innerHTML = date.getFullYear();

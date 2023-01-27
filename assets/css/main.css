@@ -71,7 +71,7 @@ main {
 
 .main-banner__slogan {
     float: right;
-    padding-top: 250px;
+    padding-top: 180px;
     font-size: 54px;
     font-weight: var(--font-weight-600);
 	 color: var(--white-color);
@@ -263,9 +263,42 @@ img {
 }
 
 .brend-grid__item:hover {
-    color: var(--blue-color);
     transform: scale(1.05);
     cursor: default;
+}
+
+/* Map */
+
+.map-title {
+	border: 1px #000 solid;
+	border-radius: 50px;
+	margin-bottom: 20px;
+}
+
+.map-title h2{
+	margin: 20px;
+}
+
+.map__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 15px;
+	justify-items: center;
+	padding: 5px;
+}
+
+.map__column-left {
+	width: 100%;
+	overflow: hidden;
+	border: 1px #000 solid;
+	border-radius: 10px;
+}
+
+.map__column-right {
+	width: 100%;
+	overflow: hidden;
+	border: 1px #000 solid;
+	border-radius: 10px;
 }
 
 /* Media */
@@ -293,6 +326,10 @@ img {
 }
 
 @media screen and (max-width: 1140px){
+	.main-banner__slogan {
+		padding-top: 150px;
+  }
+
     .brend__pic {
         width: 340px;
     }
@@ -330,7 +367,7 @@ img {
 
     .main-banner__slogan {
         font-size: var(--font-size-32);
-        padding-top: 350px;
+        padding-top: 250px;
     }
 
     .brend-grid__item {
@@ -367,6 +404,7 @@ img {
 
     .main-banner__slogan {
         font-size: 28px;
+		  margin-top: 80px;
     }
 
     .brend-grid {

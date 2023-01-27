@@ -37,7 +37,7 @@ body {
 }
 
 .footer-bot-part__number .phone:hover {
-    color: var(--blue-color);
+    color: var(--green-color);
 }
 
 h1 {
@@ -76,7 +76,7 @@ input {
     width: 100%;
     height: 54px;
     border-image: none;
-    border: 1px solid var(--blue-color);
+    border: 1px solid var(--green-color);
     text-align: center;
 }
 
@@ -148,11 +148,11 @@ textarea[placeholder] {
 }
 
 .primary-btn--blue {
-    background: var(--blue-color);
+    background: var(--green-color);
 }
 
 .button:hover {
-    background: #053d5e;
+    background: var(--light-green-color);
 }
 
 
@@ -220,13 +220,13 @@ textarea[placeholder] {
 .hamburger-inner::before,
 .hamburger-inner::after {
     height: 3px;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
 }
 
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
 }
 
 .main-menu__list {
@@ -280,7 +280,7 @@ textarea[placeholder] {
 
 .scrolled .header__top-part {
     background-color: var(--light-grey-color);
-    border-bottom: 1px solid var(--blue-color);
+    border-bottom: 1px solid var(--green-color);
     box-shadow: 0px 0px 8px #232323;
     transition: 0.3s ease;
 }
@@ -312,7 +312,7 @@ textarea[placeholder] {
     padding: 24px 0;
     max-width: 800px;
     max-height: 859px;
-    background: var(--blue-color);
+    background: var(--green-color);
     color: var(--white-color);
     box-shadow: 0 5px 15px #0c0c0c;
 }
@@ -515,7 +515,7 @@ textarea[placeholder] {
 .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: var(--blue-color);
+    background-color: var(--green-color);
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -661,13 +661,13 @@ textarea[placeholder] {
         bottom: 5%;
         padding-top: 15px;
         width: 167px;
-        border-top: 1px solid var(--blue-color)
+        border-top: 1px solid var(--green-color)
     }
 
     .mobile__btn {
         font-weight: 600;
         font-size: 20px;
-        color: var(--blue-color);
+        color: var(--green-color);
         text-decoration: none;
     }
 
