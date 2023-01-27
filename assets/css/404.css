@@ -30,7 +30,7 @@ h2 {
 }
 
 span {
-    color: #044971;
+    color: var(--green-color);
 }
 
 .primary-btn {
@@ -44,10 +44,37 @@ span {
 }
 
 .primary-btn--orange {
-    background-color: var(--orange-color);
+    background-color: var(--green-color);
 }
 
 .primary-btn--orange:hover {
-    background-color: var(--blue-color);
+    background-color: var(--light-green-color);
     transition: 0.3s ease;
+}
+
+.not-found__grid {
+	display: grid;
+	position: relative;
+	grid-template-rows: 1fr 2fr;
+	grid-template-areas: 
+		"A"
+		"B";
+	gap: var(--m24);
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+	padding: var(--m36) var(--m12);
+}
+
+.not-found__image {
+	grid-area: A;
+	width: 100%;
+}
+
+.not-found__bot {
+	grid-area: B;
+}
+
+.not-found__image img {
+	right: 20px;
 }
