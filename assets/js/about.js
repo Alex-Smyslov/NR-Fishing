@@ -40,3 +40,10 @@ dots.forEach((item, indexDot)=> {
 });
 
 setInterval(nextSlide, 5000);
+
+/* faq */
+
+function faqToggle(event) {
+    const elem = event.target;
+    elem.parentElement.parentElement.classList.toggle('active');
+}

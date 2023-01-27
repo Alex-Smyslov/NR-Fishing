@@ -298,10 +298,53 @@
       </section> -->
 
       <!-- section-guarantee -->
-      <section class="section guarantee">
+      <section class="faq">
         <div class="container">
-          <h2 class="guarantee__title title">Вопрос-ответ</h2>
-          <details class="guarantee__wrapp">
+          <h2 class="faq__title title">Часто задаваемые вопросы</h2>
+
+          <div class="faq__list flex">
+            <div class="list">
+              <div class="list__item">
+                <div class="list__question question" onclick="faqToggle(event)">
+                  <h3 class="question__text">Вы продаете оригинальные товары?</h3>
+                </div> 
+      
+                <div class="list__answer answer">
+                  <p class="answer__text">Да, наш магазин реализует только оригинальную продукцию.<br/> Мы сотрудничаем только с официальным представителлями брендов.</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__question question" onclick="faqToggle(event)">
+                  <h3 class="question__text">Могу ли я вернуть товар?</h3>
+                </div> 
+      
+                <div class="list__answer answer">
+                  <p class="answer__text">Вы имеете право вернуть товар в течении 7 дней с момента оплаты или получения.<br />Товарный вид не должен быть нарушен. Товар принимается в офисе компании.</p>
+                </div>
+              </div>
+
+              <div class="list__item">
+                <div class="list__question question" onclick="faqToggle(event)">
+                  <h3 class="question__text">Как оплатить товар?</h3>
+                </div> 
+      
+                <div class="list__answer answer">
+                  <p class="answer__text"> Мы принимаем:<br/>1) Банковские карты<br/>2) Прямые платежи на расчетный счет<br/>3) Наличные</p>
+                </div>
+              </div>
+            </div>
+            <div class="faq__block-img">
+              <img class="faq__img" src="assets/images/faq-fish.png" alt="">
+              <div class="faq__bubles buble1"></div>
+              <div class="faq__bubles buble2"></div>
+              <div class="faq__bubles buble3"></div>
+              <div class="faq__bubles buble4"></div>
+            </div>
+          </div>
+
+
+         <!-- <details class="guarantee__wrapp">
             <summary class="guarantee__heading">
               Вы продаете оригинальные товары?
             </summary>
@@ -327,7 +370,8 @@
               Товарный вид не должен быть нарушен. Товар принимается в офисе
               компании.
             </p>
-          </details>
+          </details> -->
+
           <!-- <details class="guarantee__wrapp">
             <summary class="guarantee__heading">
               Соответствие стандартам

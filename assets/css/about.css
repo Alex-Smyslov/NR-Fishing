@@ -211,18 +211,127 @@ img {
     object-fit: cover;
 }
 
-/* guarantee */
-.guarantee {
-    background-color: var(--orange-color);
+/* faq */
+.faq {
+    background-color: var(--light-grey-color);
     margin-bottom: 78px;
     padding-top: 27px;
     padding-bottom: 30px;
 }
 
-.guarantee__title {
+.faq__title {
     margin-top: 0px;
 }
 
+.list__answer {
+    display: none;
+    opacity: 0;
+}
+
+.answer__text {
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-130);
+    color: var(--text-color);
+}
+
+.list__question:hover {
+    color: var(--green-color);
+    cursor: pointer;
+}
+
+.active {
+    margin-bottom: 40px;
+    border-bottom: 1px solid var(--green-color);
+}
+
+.active .question__text {
+    color: var(--green-color);
+}
+
+.active .list__answer {
+    display: block;
+    opacity: 1;
+
+    animation: fadeInFromNone 1s ease-in-out;
+}
+
+@keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+  
+    1% {
+      display: block;
+      opacity: 0;
+    }
+  
+    100% {
+      display: block;
+      opacity: 1;
+    }
+  }
+
+.faq__list {
+    align-items: flex-start;
+}
+
+.list {
+    width: 550px;
+}
+
+.faq__img {
+    width: 500px;
+}
+
+.faq__block-img {
+    position: relative;
+}
+
+.buble1 {
+    background-color: var(--white-color);
+    border-radius: 50% 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: -60px;
+    top: 240px;
+}
+
+.buble2 {
+    background-color: var(--white-color);
+    border-radius: 50% 50%;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    left: -25px;
+    top: 140px;
+}
+
+.buble3 {
+    background-color: var(--white-color);
+    border-radius: 50% 50%;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: -50px;
+    top: 60px;
+}
+
+.buble4 {
+    background-color: var(--white-color);
+    border-radius: 50% 50%;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: -20px;
+    top: 0px;
+}
+
+
+/*
 .guarantee__content {
     padding-left: 24px;
     width: 90%;
@@ -266,7 +375,7 @@ img {
 .guarantee__wrapp[open] > .guarantee__heading:before {
     transform: scale(1,-1);
 }
-
+*/
 /* form */
 .request {
     margin-bottom: var(--m108);
