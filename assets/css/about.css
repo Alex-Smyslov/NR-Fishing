@@ -236,7 +236,16 @@ img {
     color: var(--text-color);
 }
 
-.list__question:hover {
+.question__text {
+    width: fit-content;
+    font-family: var(--font-text);
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-22);
+    line-height: var(--line-height-130);
+    color: var(--text-color);
+}
+
+.question__text:hover {
     color: var(--green-color);
     cursor: pointer;
 }
