@@ -426,6 +426,50 @@ img {
     .banner_video h2 {
         font-size: 8rem;
     }
+
+    .faq__img {
+        width: 300px;
+    }
+
+    .buble1 {
+        background-color: var(--white-color);
+        border-radius: 50% 50%;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        left: -50px;
+        top: 140px;
+    }
+    
+    .buble2 {
+        background-color: var(--white-color);
+        border-radius: 50% 50%;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: -25px;
+        top: 60px;
+    }
+    
+    .buble3 {
+        background-color: var(--white-color);
+        border-radius: 50% 50%;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        left: -50px;
+        top: 00px;
+    }
+    
+    .buble4 {
+        background-color: var(--white-color);
+        border-radius: 50% 50%;
+        height: 10px;
+        width: 10px;
+        position: absolute;
+        left: -20px;
+        top: -40px;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -457,6 +501,10 @@ img {
 
     .banner_video h2 {
         font-size: 6rem;
+    }
+
+    .faq__block-img {
+        display: none;
     }
 }
 
