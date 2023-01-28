@@ -287,8 +287,10 @@ textarea[placeholder] {
 
 .mobile__wrapp {
     display: none;
+	 margin: auto;
     position: absolute;
     z-index: 10;
+	 width: 100%;
 }
 
 /*====================== modal window =======================*/
@@ -589,7 +591,10 @@ textarea[placeholder] {
 		width: 100%;
 		height: 100%;
 		padding: 50px 15px;
-		background: var(--light-grey-color);
+		background-image: url(../images/m-menu.jpg);
+   	background-repeat: no-repeat;
+   	background-position: center;
+   	background-size: cover;
 		transform: translateX(-100%);
 		transition: transform 0.5s;
 }
@@ -621,17 +626,44 @@ textarea[placeholder] {
 .hamburger {
 		display: inline-block;
 }
+.mobile__btn {
+	font-weight: 600;
+	font-size: 20px;
+	color: var(--green-color);
+	text-decoration: none;
+}
 
-   .logo-link svg {
+.mobile__btn:hover {
+	color: var(--green-color)
+}
+
+.mobile__phone {
+	display: block;
+	margin-bottom: 10px;
+
+}
+
+.mobile__wrapp {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	bottom: 5%;
+	padding-top: 15px;
+	/* width: 167px; */
+	border-top: 1px solid var(--light-green-color)
+}
+
+.logo-link svg {
       width: 288px;
    }
 
-   .modal__wrapp {
-      max-width: 80%;
+.modal__wrapp {
+   max-width: 80%;
    }
 
-   .modal__form {
-      max-width: 70%;
+.modal__form {
+   max-width: 70%;
    }
 }
 
@@ -648,36 +680,12 @@ textarea[placeholder] {
         width: 268px;
     }
 
-    .main-menu__list {
+    /* .main-menu__list {
         align-items: start;
-    }
+    } */
 
     .header__bot-part .primary-btn {
         display: none;
-    }
-
-    .mobile__wrapp {
-        display: block;
-        bottom: 5%;
-        padding-top: 15px;
-        width: 167px;
-        border-top: 1px solid var(--green-color)
-    }
-
-    .mobile__btn {
-        font-weight: 600;
-        font-size: 20px;
-        color: var(--green-color);
-        text-decoration: none;
-    }
-
-    .mobile__btn:hover {
-        color: var(--green-color)
-    }
-
-    .mobile__phone {
-        display: block;
-        margin-bottom: 10px;
     }
 
     .header__bot-part {
@@ -716,7 +724,7 @@ textarea[placeholder] {
     }
 
     .phone {
-        font-size: var(--font-size-16);
+        font-size: var(--font-size-22);
     }
 
     .faq__desc {
@@ -796,7 +804,6 @@ textarea[placeholder] {
     }
 
     .logo-link svg {
-        width: 192px;
         height: 63px;
     }
 
@@ -808,7 +815,7 @@ textarea[placeholder] {
         padding: 14px 27px;
     }
 
-    .main-menu__item {
+    /* .main-menu__item {
         font-size: 20px;
     }
-}
+} */

@@ -270,6 +270,10 @@ img {
 
 /* Map */
 
+.map {
+	padding-bottom: var(--m36);
+}
+
 .map-title {
 	margin-bottom:var(--m108);
 }
