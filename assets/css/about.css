@@ -228,6 +228,10 @@ img {
     opacity: 0;
 }
 
+.list__item {
+    transition: all 1s ease;
+}
+
 .answer__text {
     font-family: var(--font-text);
     font-weight: var(--font-weight-500);
@@ -251,8 +255,10 @@ img {
 }
 
 .active {
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+    margin-top: 80px;
     border-bottom: 1px solid var(--green-color);
+    transition: all 0.4s ease;
 }
 
 .active .question__text {
