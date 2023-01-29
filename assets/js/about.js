@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll('.slide'),
+/* const slides = document.querySelectorAll('.slide'),
       dots = document.querySelectorAll('.dot');
 
 let index = 0;
@@ -39,7 +39,7 @@ dots.forEach((item, indexDot)=> {
     });
 });
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 5000); */
 
 /* faq */
 
