@@ -171,77 +171,77 @@ img {
   top: 20%;
   right: 20%;
 }
-.wrapper div:nth-child(2) {
+.wrapper .about__bubble:nth-child(1) {
   top: 20%;
   left: 20%;
   animation: animate 8s linear infinite;
 }
-.wrapper div:nth-child(3) {
+.wrapper .about__bubble:nth-child(2) {
   top: 60%;
   left: 80%;
   animation: animate 10s linear infinite;
 }
-.wrapper div:nth-child(4) {
+.wrapper .about__bubble:nth-child(3) {
   top: 40%;
   left: 40%;
   animation: animate 3s linear infinite;
 }
-.wrapper div:nth-child(5) {
+.wrapper .about__bubble:nth-child(4) {
   top: 66%;
   left: 30%;
   animation: animate 7s linear infinite;
 }
-.wrapper div:nth-child(6) {
+.wrapper .about__bubble:nth-child(5) {
   top: 90%;
   left: 10%;
   animation: animate 9s linear infinite;
 }
-.wrapper div:nth-child(7) {
+.wrapper .about__bubble:nth-child(6) {
   top: 30%;
   left: 60%;
   animation: animate 5s linear infinite;
 }
-.wrapper div:nth-child(8) {
+.wrapper .about__bubble:nth-child(7) {
   top: 70%;
   left: 20%;
   animation: animate 8s linear infinite;
 }
-.wrapper div:nth-child(9) {
+.wrapper .about__bubble:nth-child(8) {
   top: 75%;
   left: 60%;
   animation: animate 10s linear infinite;
 }
-.wrapper div:nth-child(10) {
+.wrapper .about__bubble:nth-child(9) {
   top: 50%;
   left: 50%;
   animation: animate 6s linear infinite;
 }
-.wrapper div:nth-child(11) {
+.wrapper .about__bubble:nth-child(10) {
   top: 45%;
   left: 20%;
   animation: animate 10s linear infinite;
 }
-.wrapper div:nth-child(12) {
+.wrapper .about__bubble:nth-child(11) {
   top: 10%;
   left: 80%;
   animation: animate 9s linear infinite;
 }
-.wrapper div:nth-child(13) {
+.wrapper .about__bubble:nth-child(12) {
   top: 20%;
   left: 60%;
   animation: animate 7s linear infinite;
 }
-.wrapper div:nth-child(14) {
+.wrapper .about__bubble:nth-child(13) {
   top: 20%;
   left: -5%;
   animation: animate 8s linear infinite;
 }
-.wrapper div:nth-child(15) {
+.wrapper .about__bubble:nth-child(14) {
   top: 60%;
   left: -15%;
   animation: animate 6s linear infinite;
 }
-.wrapper div:nth-child(16) {
+.wrapper .about__bubble:nth-child(15) {
   top: 90%;
   left: -20px;
   animation: animate 9s linear infinite;
@@ -256,9 +256,9 @@ img {
 }
 
 .about__content {
-    bottom: 40%;
+    bottom: 0;
     left: -400px;
-    height: 300px;
+    height: 500px;
     width: 340px;
     position: absolute;
     border-radius: 0 20px 20px 0;
@@ -267,10 +267,16 @@ img {
     animation: animate_pulse 1.5s infinite;
 }
   
-  .about__content:hover {
-      width: 920px;
-      transition: all 1s ease;
-      animation: none;
+.about__content:hover {
+    width: 920px;
+    transition: all 1s ease;
+    animation: none;
+}
+
+.about__content:hover .content__grid {
+    display: grid;
+    opacity: 1;
+    animation: fadeInFromNone 1s ease-in-out;
 }
 
   @keyframes animate_pulse {
@@ -301,6 +307,18 @@ img {
     transform: rotate(-90deg);
 }
 
+.content__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: absolute;
+    right: 0;
+    display: none;
+    opacity: 0;
+}
+
+.content__item {
+    width: 100px;
+}
 
 /* properties */
 .properties {
