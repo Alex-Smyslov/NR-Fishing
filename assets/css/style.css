@@ -650,7 +650,7 @@ textarea[placeholder] {
 	align-items: center;
 	bottom: 5%;
 	padding-top: 15px;
-	/* width: 167px; */
+	width: 95%;
 	border-top: 1px solid var(--light-green-color)
 }
 
@@ -679,10 +679,6 @@ textarea[placeholder] {
     .logo-link svg {
         width: 268px;
     }
-
-    /* .main-menu__list {
-        align-items: start;
-    } */
 
     .header__bot-part .primary-btn {
         display: none;
@@ -804,7 +800,8 @@ textarea[placeholder] {
     }
 
     .logo-link svg {
-        height: 63px;
+		width: 230px;
+      height: 63px;
     }
 
     .logo-link {
@@ -815,7 +812,7 @@ textarea[placeholder] {
         padding: 14px 27px;
     }
 
-    /* .main-menu__item {
+    .main-menu__item {
         font-size: 20px;
     }
-} */
+}
