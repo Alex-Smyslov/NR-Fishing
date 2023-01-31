@@ -6,10 +6,9 @@ body {
 
 .wrapper {
   height: 600px;
-  width: 100%;
+  width: 100vw;
   background: #f1f6fa;
   position: relative;
-
 }
 
 .about__bubble {
@@ -93,7 +92,7 @@ body {
 }
 .wrapper .about__bubble:nth-child(13) {
   top: 20%;
-  left: -5%;
+  left: 15%;
   animation: animate 8s linear infinite;
 }
 .wrapper .about__bubble:nth-child(14) {
@@ -103,7 +102,7 @@ body {
 }
 .wrapper .about__bubble:nth-child(15) {
   top: 90%;
-  left: -20px;
+  left: 10px;
   animation: animate 9s linear infinite;
 }
 @keyframes animate {
@@ -117,7 +116,7 @@ body {
 
 .about__content {
     bottom: 0;
-    left: -400px;
+    left: -100px;
     height: 520px;
     width: 240px;
     position: absolute;
