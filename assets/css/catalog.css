@@ -1,0 +1,27 @@
+.list-container {
+    width: 1140px;
+    margin: auto
+}
+
+.list__item {
+    white-space: pre-wrap;
+    margin-top: 20px;
+}
+
+.list__item p {
+    margin: 0;
+}
+
+.list__item-pos {
+    display: flex;
+    column-gap: 40px;
+}
+
+.list__item-text {
+    width: 200px;
+    padding-bottom: 20px;
+}
+
+.list__item-text--done {
+    color: green;
+}

@@ -48,7 +48,7 @@
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/variables.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/catalog.css" />
   </head>
 
   <body class="page">
@@ -138,11 +138,11 @@
           <nav class="main-menu header__menu">
             <ul class="main-menu__list main-menu__list--text flex">
               <li class="main-menu__item"><a href="index.html">Главная</a></li>
-              <li class="main-menu__item main-menu__item--active">
-                <a href="#!">О нас</a>
-              </li>
+              <li class="main-menu__item"><a href="about.html">О нас</a></li>
               <li class="main-menu__item"><a href="galary.html">Галерея</a></li>
-              <li class="main-menu__item"><a href="catalog.html">Каталог</a></li>
+              <li class="main-menu__item main-menu__item--active">
+                <a href="#!">Каталог</a>
+              </li>
             </ul>
             <!-- mobile -->
             <div class="mobile__wrapp">
@@ -192,167 +192,18 @@
 
     <!-- Main -->
     <main>
-      <section class="about">
-        <div class="wrapper">
-          <div class="about__content content">
-            <div class="content__wrapper">
-              <h1 class="content__title">О нас</h1>
-              <div class="content__grid">
-                <div class="content__item">
-                  <img src="assets/images/faq-fish-icon.svg" alt="">
-                  <p class="content__text">Более 20 000 товаров в наличии на собственном складе</p>
-                </div>
-                <div class="content__item">
-                  <img src="assets/images/faq-fish-icon.svg" alt="">
-                  <p class="content__text">Более 20 000 товаров в наличии на собственном складе</p>
-                </div>
-                <div class="content__item">
-                  <img src="assets/images/faq-fish-icon.svg" alt="">
-                  <p class="content__text">Более 20 000 товаров в наличии на собственном складе</p>
-                </div>
-                <div class="content__item">
-                  <img src="assets/images/faq-fish-icon.svg" alt="">
-                  <p class="content__text">Более 20 000 товаров в наличии на собственном складе</p>
-                </div>
-                <div class="content__item">
-                  <img src="assets/images/faq-fish-icon.svg" alt="">
-                  <p class="content__text">Более 20 000 товаров в наличии на собственном складе</p>
-                </div>
-                <div class="content__item">
-                  <img src="assets/images/faq-fish-icon.svg" alt="">
-                  <p class="content__text">Более 20 000 товаров в наличии на собственном складе</p>
-                </div>
-              </div>
+        <section class="catalog">
+            <div class="container">
+                <ol id="list">
+                    <li class="list__item" id="0"></li>
+                </ol>
+            
+                <input type="text" id="inputName">
+                <input type="date" id="inputDate">
+                <button id="buttonID" type="submit">Добавить</button>
             </div>
-          </div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-          <div class="about__bubble"><span class="dot"></span></div>
-        </div>
-      </section>
-
-      <!-- section-properties -->
-      <section class="section properties">
-        <div class="container">
-          <h2 class="properties__title title">Преимущества работы с нами</h2>
-          <div class="properties__card_wrapp flex">
-            <div class="properties__card card">
-              <img class="card__image" src="assets/images/quality.png" alt="" />
-              <h4 class="card__title">Опыт работы с 2012 года</h4>
-            </div>
-            <div class="properties__card card">
-              <img class="card__image" src="assets/images/price.png" alt="" />
-              <h4 class="card__title">
-                Цены нa 5-10% ниже, чeм у посpeдникoв. Товары можно приобрести в
-                рассрочку
-              </h4>
-            </div>
-            <div class="properties__card card">
-              <img
-                class="card__image"
-                src="assets/images/toolchain.png"
-                alt=""
-              />
-              <h4 class="card__title">
-                Качественные товары с гарантией производителя
-              </h4>
-            </div>
-            <div class="properties__card card">
-              <img class="card__image" src="assets/images/order.png" alt="" />
-              <h4 class="card__title">Принимаем предзаказы на любые товары</h4>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- section-guarantee -->
-      <section class="faq">
-        <div class="container">
-          <h2 class="faq__title title">Часто задаваемые вопросы</h2>
-
-          <div class="faq__list flex">
-            <div class="list">
-              <div class="list__item">
-                <div class="list__question question">
-                  <h3 class="question__text" onclick="faqToggle(event)">Вы продаете оригинальные товары?</h3>
-                </div> 
-      
-                <div class="list__answer answer">
-                  <p class="answer__text">Да, наш магазин реализует только оригинальную продукцию.<br/> Мы сотрудничаем только с официальным представителлями брендов.</p>
-                </div>
-              </div>
-
-              <div class="list__item">
-                <div class="list__question question">
-                  <h3 class="question__text" onclick="faqToggle(event)">Могу ли я вернуть товар?</h3>
-                </div> 
-      
-                <div class="list__answer answer">
-                  <p class="answer__text">Вы имеете право вернуть товар в течении 7 дней с момента оплаты или получения.<br />Товарный вид не должен быть нарушен. Товар принимается в офисе компании.</p>
-                </div>
-              </div>
-
-              <div class="list__item">
-                <div class="list__question question">
-                  <h3 class="question__text" onclick="faqToggle(event)">Как оплатить товар?</h3>
-                </div> 
-      
-                <div class="list__answer answer">
-                  <p class="answer__text"> Мы принимаем:<br/>1) Банковские карты<br/>2) Прямые платежи на расчетный счет<br/>3) Наличные</p>
-                </div>
-              </div>
-
-              <div class="list__item">
-                <div class="list__question question">
-                  <h3 class="question__text" onclick="faqToggle(event)">Предусмотрены ли скидки?</h3>
-                </div> 
-      
-                <div class="list__answer answer">
-                  <p class="answer__text"> Да, постоянным клиентам предоставляются скидки в 10% по карте магазина</p>
-                </div>
-              </div>
-
-              <div class="list__item">
-                <div class="list__question question">
-                  <h3 class="question__text" onclick="faqToggle(event)">Могу ли я сделать предзаказ?</h3>
-                </div> 
-      
-                <div class="list__answer answer">
-                  <p class="answer__text"> Вы можете сделать предзаказ любого товара в нашем магазине</p>
-                </div>
-              </div>
-
-              <div class="list__item">
-                <div class="list__question question">
-                  <h3 class="question__text" onclick="faqToggle(event)">Возможна ли рассрочка платежа за товары?</h3>
-                </div> 
-      
-                <div class="list__answer answer">
-                  <p class="answer__text"> В нашем магазине предусмотрена рассрочка сроком до 1 года</p>
-                </div>
-              </div>
-            </div>
-            <div class="faq__block-img">
-              <img class="faq__img" src="assets/images/faq-fish.png" alt="">
-              <div class="faq__bubles buble1"></div>
-              <div class="faq__bubles buble2"></div>
-              <div class="faq__bubles buble3"></div>
-              <div class="faq__bubles buble4"></div>
-            </div>
-          </div>
-      </section>
-    </main>
+        </section>
+    </main>   
     <!-- footer -->
     <footer class="footer">
       <div class="container">
@@ -474,6 +325,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/about.js"></script>
+    <script src="assets/js/catalog.js"></script>
   </body>
 </html>
