@@ -20,7 +20,6 @@
 }
 
 .list__item-pos {
-    display: flex;
     column-gap: 40px;
 }
 
@@ -29,6 +28,6 @@
     padding-bottom: 20px;
 }
 
-.list__item-text--done {
-    color: green;
+.list__pic {
+    width: 200px;
 }
