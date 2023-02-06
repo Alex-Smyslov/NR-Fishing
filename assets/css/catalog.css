@@ -3,6 +3,13 @@
     margin: auto
 }
 
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
 .list__item {
     white-space: pre-wrap;
     margin-top: 20px;

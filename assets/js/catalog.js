@@ -80,7 +80,7 @@ function clearItem() { /* функция для очистки содержим�
 
 function reDrawing(listArray) { /* функция для отрисовки массива */
     for (let index = 0; index < listArray.length; index++) {
-        let newEl = document.createElement('li') /* создание нового элемента списка */
+        let newEl = document.createElement('div') /* создание нового элемента списка */
         newEl.className = 'list__item'; /* присваиваем имя элементу */
         newEl.id = listArray[index].id; /* присваиваем id элементу */
         newEl.innerHTML = `<div class = "list__item-pos"><div><p class= "list__item-text">${listArray[index].name}</p><p>${String(listArray[index].date)}</p></div><div><button class="buttonEdit">Редактировать</button><button class="buttonDel">Удалить</button></div></div>`; /* помещаем текстовое значение для вывода - имя + дата + 2 кнопки*/
