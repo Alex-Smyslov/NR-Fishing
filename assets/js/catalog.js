@@ -44,6 +44,7 @@ document.getElementById('list').addEventListener('click', event => { /* обра
     }
 
     else if (event.target.className === 'buttonEdit') { /* для кнопок "Редактировать". при нажатии кнопки "Редактировать" ищет элемент, к которому вносят изменения. */
+        document.querySelector('.buttonDel').setAttribute('disabled', true);
         objectID = elemList.parentElement.parentElement.parentElement.id;
         document.querySelector('#inputName').value = listArray[objectID].name;
         document.querySelector('#inputPrice').value = listArray[objectID].price;
