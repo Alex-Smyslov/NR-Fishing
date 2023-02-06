@@ -44,7 +44,7 @@ document.getElementById('list').addEventListener('click', event => { /* обра
     }
 
     else if (event.target.className === 'buttonEdit') { /* для кнопок "Редактировать". при нажатии кнопки "Редактировать" ищет элемент, к которому вносят изменения. */
-        document.querySelector('.buttonDel').setAttribute('disabled', true);
+        buttonDisabled();
         objectID = elemList.parentElement.parentElement.parentElement.id;
         document.querySelector('#inputName').value = listArray[objectID].name;
         document.querySelector('#inputPrice').value = listArray[objectID].price;
@@ -89,6 +89,13 @@ function clearInput(itemName, price, fileImg) { /* функция для очи�
     itemName.value = '';
     price.value = '';
     fileImg.value = null;
+}
+
+function buttonDisabled() {
+    let buttonDel = document.querySelectorAll('.buttonDel');
+    for (let index = 0; index < buttonDel.length; index++) {
+        buttonDel[index].setAttribute('disabled', true);
+    }
 }
 
 
