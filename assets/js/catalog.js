@@ -75,7 +75,7 @@ function reDrawing(listArray) { /* функция для отрисовки ма
         let newEl = document.createElement('div') /* создание нового элемента списка */
         newEl.className = 'list__item'; /* присваиваем имя элементу */
         newEl.id = listArray[index].id; /* присваиваем id элементу */
-        newEl.innerHTML = `<div class = "list__item-pos"><img class="list__pic" src = "./assets/images/testItem.jpg"><div><p class= "list__item-text">${listArray[index].name}</p><p>${String(listArray[index].price)}</p></div><div><button class="buttonEdit">Редактировать</button><button class="buttonDel">Удалить</button></div></div>`; /* помещаем текстовое значение для вывода - имя + дата + 2 кнопки*/
+        newEl.innerHTML = `<div class = "list__item-pos"><img class="list__pic" src = "./assets/images/testItem.jpg"><div class= "list__item-text"><p>${listArray[index].name}</p><p>${String(listArray[index].price)}₽</p></div><div class= "list__item--btn"><button class="buttonEdit">Редактировать</button><button class="buttonDel">Удалить</button></div></div>`; /* помещаем текстовое значение для вывода - имя + дата + 2 кнопки*/
         list.append(newEl); /* добавление элемента в DOM дерево */
     }
 }

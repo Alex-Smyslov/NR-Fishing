@@ -8,6 +8,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     gap: 30px;
+    margin-bottom: 100px;
 }
 
 .list__item {
@@ -21,13 +22,23 @@
 
 .list__item-pos {
     column-gap: 40px;
+    width: 300px;
 }
 
 .list__item-text {
-    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     padding-bottom: 20px;
 }
 
 .list__pic {
-    width: 200px;
+    width: 300px;
+}
+
+.list__item--btn  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
