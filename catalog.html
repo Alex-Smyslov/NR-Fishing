@@ -195,12 +195,15 @@
         <section class="catalog">
             <div class="container">
                 <div class="list" id="list">
-                    <div class="list__item" id="0"></div>
                 </div>
-                <input type="text" id="inputName" placeholder="Введи наименование товара">
-                <input type="number" id="inputPrice" placeholder="Введи цену товара">
-                <input type="file" id="inputImg" placeholder="Добавьте изображение товара">
-                <button id="buttonID" type="submit">Добавить</button>
+                <div class="catalog__inputs inputs">
+                  <input type="text" id="inputName" placeholder="Введи наименование товара">
+                  <input type="number" id="inputPrice" placeholder="Введи цену товара">
+                  <div class="inputs__pos">
+                    <input class="catalog__input-file" type="file" id="inputImg">
+                    <button class="primary-btn primary-btn--green inputs__btn" id="buttonID" type="submit">Добавить</button>
+                  </div>
+                </div>
             </div>
         </section>
     </main>   

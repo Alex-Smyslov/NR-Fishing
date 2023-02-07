@@ -1,8 +1,44 @@
-let listArray = []   /* создание массива внутри которого содержатся объекты (для каждой задачи) */ 
+let listArray = [
+    {
+        name: "Лодка надувная",
+        price: 120000,
+        id: 0,
+        url: "assets/images/сatalog/item0.jpg"
+    },
+
+    {
+        name: "Рыболовная сеть",
+        price: 2000,
+        id: 1,
+        url: "assets/images/сatalog/item1.jpg"
+    },
+
+    {
+        name: "Блесна Kuusamo Latka 70/14 C",
+        price: 500,
+        id: 2,
+        url: "assets/images/сatalog/item2.jpg"
+    },
+
+    {
+        name: "Рыболовный сачок",
+        price: 1499,
+        id: 3,
+        url: "assets/images/сatalog/item3.jpg"
+    },
+
+    {
+        name: "Панама vintage boonieк, цвет - хаки",
+        price: 2199,
+        id: 4,
+        url: "assets/images/сatalog/item4.jpg"
+    },
+]   /* создание массива внутри которого содержатся объекты (для каждой задачи) */ 
 var objectID; /* глобальная переменная - сохраняет значения найденного ID */
 
 const list = document.getElementById('list');
 const button = document.querySelector('#buttonID');
+reDrawing(listArray);
 button.addEventListener('click', () => { /* событие при клике на кнопку "Добавить" */
     var itemName = document.querySelector('#inputName');
     var price = document.querySelector('#inputPrice');
@@ -19,7 +55,7 @@ button.addEventListener('click', () => { /* событие при клике н�
             button.id = 'buttonID';
         }
         else {
-            listArray.push(objectItem = {name: itemName.value, price: price.value, url: fileImg.value, id: listArray.length}); /* пуш в массив нового элемента (объекта с параметрами: id, имя задачи, статус, срок) */
+            listArray.push(objectItem = {name: itemName.value, price: price.value, url: "assets/images/сatalog/testItem.jpg", id: listArray.length}); /* пуш в массив нового элемента (объекта с параметрами: id, имя задачи, статус, срок) */
             clearItem(); /* вызов функции очистки экрана (списка) */
             reDrawing(listArray); /* вызов функции отрисовки массива (параметром передаем массив) */
             clearInput(itemName, price, fileImg); /* вызов функции очистки input */
@@ -75,9 +111,10 @@ function reDrawing(listArray) { /* функция для отрисовки ма
         let newEl = document.createElement('div') /* создание нового элемента списка */
         newEl.className = 'list__item'; /* присваиваем имя элементу */
         newEl.id = listArray[index].id; /* присваиваем id элементу */
-        newEl.innerHTML = `<div class = "list__item-pos"><img class="list__pic" src = "./assets/images/testItem.jpg"><div class= "list__item-text"><p>${listArray[index].name}</p><p>${String(listArray[index].price)}₽</p></div><div class= "list__item--btn"><button class="buttonEdit">Редактировать</button><button class="buttonDel">Удалить</button></div></div>`; /* помещаем текстовое значение для вывода - имя + дата + 2 кнопки*/
+        newEl.innerHTML = `<div class = "list__item-pos"><img class="list__pic" src = ${listArray[index].url}><div class= "list__item-text"><p>${listArray[index].name}</p><p>${String(listArray[index].price)}₽</p></div><div class= "list__item--btn"><button class="buttonEdit">Редактировать</button><button class="buttonDel">Удалить</button></div></div>`; /* помещаем текстовое значение для вывода - имя + дата + 2 кнопки*/
         list.append(newEl); /* добавление элемента в DOM дерево */
     }
+    console.log(listArray); // контроль объекта для защиты работы, потом удалить
 }
 
 function editObject(name, price, objectID) { /* функция для переприсваивания значений объекта массива. Первые два параметра - значения инпутов (имя и дата), последний параметр - номер элемента массива, в который вносятся изменения */

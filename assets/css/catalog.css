@@ -35,9 +35,31 @@
 
 .list__pic {
     width: 300px;
+    height: 260px;
 }
 
 .list__item--btn  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputs__btn {
+    border: 0;
+}
+
+.catalog__inputs {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.catalog__input-file  {
+    width: 300px;
+    margin: 0;
+}
+
+.inputs__pos {
     display: flex;
     justify-content: space-between;
     align-items: center;
