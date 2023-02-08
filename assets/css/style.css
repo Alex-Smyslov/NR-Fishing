@@ -151,6 +151,10 @@ textarea[placeholder] {
     background: var(--green-color);
 }
 
+.primary-btn--grey {
+    background-color: var(--medium-grey-color);
+}
+
 .button:hover {
     background: var(--light-green-color);
 }
@@ -386,11 +390,11 @@ textarea[placeholder] {
 }
 
 .form__footer .span a {
-    color: #ff7113d5;
+    color: var(--medium-grey-color);
 }
 
 .form__submit:hover {
-    background-color: #ff7113d5;
+    background-color: var(--deep-blue);
     transition: 0.3s ease;
 }
 
