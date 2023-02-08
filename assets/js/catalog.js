@@ -40,9 +40,9 @@ const list = document.getElementById('list');
 const button = document.querySelector('#buttonID');
 reDrawing(listArray);
 button.addEventListener('click', () => { /* событие при клике на кнопку "Добавить" */
-    var itemName = document.querySelector('#inputName');
-    var price = document.querySelector('#inputPrice');
-    var fileImg = document.querySelector('#inputImg');
+    let itemName = document.querySelector('#inputName');
+    let price = document.querySelector('#inputPrice');
+    let fileImg = document.querySelector('#inputImg');
 
     if (itemName.value!="" && price.value!="") /* проверка на заполненность полей ввода */
     {
@@ -73,7 +73,7 @@ button.addEventListener('click', () => { /* событие при клике н�
 })
 
 document.getElementById('list').addEventListener('click', event => { /* обработка событий нажатия кнопок через делегирование и всплытие. Событие вешается на родителя (list) */
-    var elemList = event.target; /* отлавливаем элемент, на который был совершен клик */
+    let elemList = event.target; /* отлавливаем элемент, на который был совершен клик */
     if (event.target.className ==='buttonDel') { /* для кнопок "Удалить" */
         if (confirm('Подтвердите удаление ячейки!')) {
             objectID = elemList.parentElement.parentElement.parentElement.id; /* Т.к. id находится у предков - у отловленного элемента обращаемся к родителям и находим id элемента  */
@@ -104,7 +104,7 @@ function funcID(listArray) { /* функция для переприсваива
 }
 
 function clearItem() { /* функция для очистки содержимого экрана */
-    var liItem = document.querySelectorAll('.list__item') /* поиск всех элементов списка */
+    let liItem = document.querySelectorAll('.list__item') /* поиск всех элементов списка */
     liItem.forEach(element => { /* удаление каждого найденного элемента через forEach */
         element.remove();
     });
