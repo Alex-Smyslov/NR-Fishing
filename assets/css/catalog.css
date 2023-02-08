@@ -59,7 +59,7 @@
 }
 
 .catalog__input-file  {
-    width: 300px;
+    width: 100%;
     margin: 0;
 }
 
@@ -67,6 +67,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -108,15 +109,19 @@
         width: 200px;
         height: 160px;
     }
-
-    .inputs__pos {
-        gap: 30px;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .list {
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+
+    .inputs__pos {
+        display: block;
+    }
+
+    .catalog__input-file {
+        margin-bottom: var(--m36);
     }
 }
