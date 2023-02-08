@@ -148,7 +148,7 @@ main {
   overflow: hidden;
 }
 
-.gallery__card__pic {
+.gallery__card-pic {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -197,11 +197,11 @@ main {
   z-index: 10;
 }
 
-.slider__btn_left {
+.slider__btn-left {
   left: 25px;
 }
 
-.slider__btn_right {
+.slider__btn-right {
   right: 25px;
 }
 

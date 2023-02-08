@@ -77,9 +77,9 @@ for (const round of sliderRound) {
 const cards = Array.from(document.querySelectorAll(".gallery__card"));
 const slider = document.querySelector(".slider2");
 const sliderContainer = document.querySelector(".slider__container");
-const picture = Array.from(document.querySelectorAll(".gallery__card__pic"));
-const sliderBtnLeft = document.querySelector(".slider__btn_left");
-const sliderBtnRight = document.querySelector(".slider__btn_right");
+const picture = Array.from(document.querySelectorAll(".gallery__card-pic"));
+const sliderBtnLeft = document.querySelector(".slider__btn-left");
+const sliderBtnRight = document.querySelector(".slider__btn-right");
 const sliderClose = document.querySelector(".slider__close");
 
 let cardIndex = -1;
