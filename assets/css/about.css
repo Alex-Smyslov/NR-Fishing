@@ -16,7 +16,7 @@ body {
 .about__bubble {
   height: 60px;
   width: 60px;
-  border: 2px solid #353535;
+  border: 2px solid #2666CE;
   border-radius: 50px;
   position: absolute;
   top: 10%;
@@ -27,7 +27,7 @@ body {
   height: 10px;
   width: 10px;
   border-radius: 50px;
-  background: #353535;
+  background: #4384EC;
   position: absolute;
   top: 20%;
   right: 20%;
@@ -418,6 +418,22 @@ body {
     .properties__card {
         width: 240px;
     }
+
+    .about__content {
+        height: 400px;
+    }
+
+    .content__item {
+        width: 100px;
+    }
+
+    .content__text {
+        font-size: 14px;
+    }
+
+    .about__content:hover {
+        width: 720px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -444,6 +460,26 @@ body {
     .guarantee__wrapp {
         padding: 24px 12px;
     }
+
+    .about__content {
+        height: 300px;
+    }
+
+    .content__item {
+        width: 60px;
+    }
+
+    .content__text {
+        font-size: 10px;
+    }
+
+    .about__content:hover {
+        width: 520px;
+    }
+
+    .content__grid {
+        gap: 20px;
+    }
 }
 
 @media screen and (max-width: 410px) {
@@ -457,5 +493,17 @@ body {
 
     .section {
         margin-bottom: var(--m36);
+    }
+
+    .about__content:hover {
+        width: 480px;
+    }
+
+    .about__content {
+        height: 280px;
+    }
+
+    .content__title {
+        font-size: var(--font-size-22);
     }
 }
