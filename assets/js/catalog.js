@@ -120,8 +120,8 @@ function reDrawing(listArray) { /* функция для отрисовки ма
 		  src = ${listArray[index].url}><div class= "list__item-text">
 		  <p>${listArray[index].name}</p><p>${String(listArray[index].price)}₽</p>
 		  </div><div class= "list__item--btn">
-		  <button class="buttonEdit primary-btn primary-btn--green">Редактировать</button>
-		  <button class="buttonDel primary-btn primary-btn--green">Удалить</button></div></div>`; /* помещаем текстовое значение для вывода - имя + дата + 2 кнопки*/
+		  <button class="buttonEdit">Редактировать</button>
+		  <button class="buttonDel">Удалить</button></div></div>`; /* помещаем текстовое значение для вывода - имя + дата + 2 кнопки*/
         list.append(newEl); /* добавление элемента в DOM дерево */
     }
     console.log(listArray); // контроль объекта для защиты работы, потом удалить
